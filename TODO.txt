@@ -1,0 +1,29 @@
+2015-03-08  add stress-test for 1000's of convoluted configuration settings
+
+2015-03-08  add simple interpolation of values such as {top_dir}
+            question:   what if top_dir has a list of values?
+            question:   what if a variable needs to keep {}'s as part of its content?
+                        provide an optional flag?
+                            thing <subst=<>>:   <top_dir>/thing
+
+2015-03-08  add context expressions
+            question: how should complex expressions be ranked?
+            question: what about things like [ date >= 2015-01-01 and date < 2016-01-01 ] ?
+
+2015-03-08  add stores for common file formats
+            .ini
+            .apache xml-like
+            .rc (every program is different)
+
+2015-03-08  idea: stores which can save settings from the user MAY also store where the setting was set from,
+                    i.e.: a URI which links to a graphical configuration editor perhaps
+                    Thus, the 'origin' would tell the user where they can change the setting.
+
+2015-03-08  provide a C-library so that all commands can enjoy the comfort of a common configuration language
+
+2015-03-08  ideally, it should be possible to interrogate and change the configuration of ANY program without
+            actually starting the program directly.
+            e.g.: it should be possible to determine which settings a program will 'see'.
+            However: in-app contexts, such as whether the program is in debug
+            mode or not will be harder to emulate accurately.
+            It should be easy to add a --configuration (or GUI equivalent) to any application!
