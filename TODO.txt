@@ -1,3 +1,5 @@
+quick git test
+
 2015-03-08  add stress-test for 1000's of convoluted configuration settings
 
 2015-03-08  add simple interpolation of values such as {top_dir}
