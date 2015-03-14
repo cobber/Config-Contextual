@@ -8,6 +8,7 @@ our @ISA    = qw( Exporter );
 our @EXPORT = qw( shared_config );
 
 use Notifications;
+use Config::Contextual::Setting;
 
 my $shared_config = undef;
 
